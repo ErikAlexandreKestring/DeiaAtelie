@@ -16,71 +16,40 @@ O sistema foi desenvolvido pensando nos clientes do **Deia Ateliê**, que buscam
 
 ## 🎯 Objetivo Geral
 
-Implantar um sistema digital que otimize o processo de agendamento de horários e serviços no **Deia Ateliê**, garantindo um atendimento mais organizado, eficiente e satisfatório, tanto para os clientes quanto para os profissionais do ateliê.
+Implantar um sistema digital que otimize o processo de agendamento de horários e serviços no **Deia Ateliê**, garantindo um atendimento mais organizado, eficiente e satisfatório, tanto para os clientes quanto para o profissional do ateliê.
 
 ---
 
-## 🧩 Funcionalidades do Sistema
+## 🛠️ Escopo
 
-### ✅ Requisitos Funcionais
+O sistema do **Deia Ateliê** tem como objetivo resolver os principais problemas enfrentados por clientes e pela administração do ateliê, trazendo mais organização, praticidade e agilidade no atendimento.
 
-#### 🔐 Gestão de Usuários
+### 👗 Para os Clientes:
 
-- Cadastro automático via WhatsApp (número e nome do perfil)
-- Edição e desativação de contas (admin)
-- Login via e-mail e senha
+- **Agendamento de Serviços:** O cliente poderá agendar serviços de costura diretamente pelo sistema, escolhendo o tipo de conserto ou ajuste, além de definir a data e o horário mais conveniente, sem precisar ligar ou enviar mensagens.
+- **Confirmação de Agendamento:** Após o agendamento, o cliente receberá uma confirmação com todos os detalhes, como o tipo de serviço, dia e horário.
+- **Notificações:** O cliente será lembrado automaticamente, via WhatsApp, um dia antes do serviço. Também receberá mensagens sobre atualizações ou mudanças no agendamento.
+- **Histórico de Serviços:** O cliente poderá ver todos os serviços que já realizou no ateliê, facilitando consultas futuras.
+- **Remarcação e Cancelamento:** Caso o cliente precise, ele poderá cancelar ou remarcar o agendamento com facilidade.
 
-#### 📅 Agendamento de Serviços
+### 🧵 Para os Administradores (Donos do Ateliê):
 
-- Escolha do tipo de serviço (ex: ajuste de vestido, conserto de calça)
-- Visualização de horários disponíveis
-- Campo para descrição do problema na peça
-- Cancelamento ou remarcação de horários
-- Histórico de agendamentos por cliente
+- **Gestão de Agenda:** O administrador terá acesso à agenda completa, podendo ver todos os agendamentos do dia ou da semana em um só lugar.
+- **Controle de Serviços:** Será possível cadastrar, editar e remover serviços oferecidos pelo ateliê, definindo tempo médio de execução e descrição de cada tipo de serviço.
+- **Definição de Horários:** O administrador poderá configurar quais dias e horários estarão disponíveis para atendimento.
+- **Evitar Conflitos de Horário:** O sistema irá bloquear automaticamente os horários já preenchidos para evitar agendamentos duplicados.
+- **Edição e Cancelamento de Agendamentos:** O administrador poderá editar ou cancelar agendamentos em casos especiais.
+- **Relatórios e Estatísticas:** O sistema irá gerar relatórios com os serviços mais procurados e os horários de maior movimento, ajudando na tomada de decisões.
 
-#### 🛠️ Gestão de Serviços e Agenda
+### 👥 Para os Colaboradores (caso existam futuramente):
 
-- Cadastro, edição e remoção de serviços
-- Definição de horários e dias de atendimento
-- Prevenção de conflitos (bloqueio de horários já ocupados)
-- Visão geral da agenda (diária e semanal)
-
-#### 📲 Notificações e Comunicação
-
-- Lembretes automáticos de agendamento (via WhatsApp)
-- Envio de mensagens personalizadas ao cliente
-
-#### 📊 Relatórios e Análises
-
-- Relatórios de serviços mais procurados
-- Visualização de histórico de agendamentos
+- **Visualização dos Agendamentos:** Cada colaborador poderá acessar os agendamentos ligados a ele, ajudando no planejamento da sua rotina de trabalho.
 
 ---
 
-### ⚙️ Requisitos Não Funcionais
+### ⚙️ Funcionalidades Comuns
 
-#### 🚀 Desempenho
-
-- Carregamento de horários em até 3 segundos
-- Suporte a no mínimo 20 agendamentos simultâneos
-
-#### 🔐 Segurança
-
-- Verificação de identidade no login
-- Bloqueio de tentativas de login suspeitas
-- Proteção contra injeção de código malicioso
-
-#### 🎨 Usabilidade
-
-- Interface simples e intuitiva para o administrador
-- Compatível com celulares, tablets e desktops
-
-#### ☁️ Disponibilidade
-
-- Sistema disponível 99% do tempo
-- Backups automáticos diários durante a madrugada
-
-#### 🔗 Integração
-
-- Conexão com WhatsApp para agendamentos automáticos
-- Envio de confirmações via WhatsApp
+- **Verificação de Disponibilidade:** O sistema checará em tempo real os horários disponíveis para evitar agendamentos duplicados.
+- **Interface Responsiva:** A plataforma funcionará bem em celulares, tablets e computadores, garantindo uma boa experiência para todos os usuários.
+- **Login Seguro:** Tanto clientes quanto administradores farão login com e-mail e senha para garantir segurança nos acessos.
+- **Cadastro Automático de Clientes:** Quando um novo cliente entrar em contato pelo WhatsApp, o sistema irá cadastrá-lo automaticamente com o nome e telefone.
