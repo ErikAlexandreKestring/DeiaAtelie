@@ -20,6 +20,27 @@ Implantar um sistema digital que otimize o processo de agendamento de horários 
 
 ---
 
+## Tecnologias Utilizadas
+
+- **Frontend**:
+  - **HTML**: Utilizado para estruturar a interface de usuário.
+  - **CSS**: Responsável pela estilização da interface, criando um layout responsivo.
+  - **JavaScript**: Usado para a criação de funcionalidades e puxar informações da API.
+
+- **Backend**:
+  - **Node.js**: Framework para o desenvolvimento da API, lógica de negócios, criação de endpoints e integração com banco de dados.
+
+- **Banco de Dados**:
+  - **PostgreSQL**: Banco de dados relacional, que vai armazenar dados dos clientes, agendamentos e serviços oferecidos pela estética automotiva, escolhido pela escalabilidade e confiabilidade.
+
+---
+
+## Arquitetura MVP
+
+- A arquitetura Model-View-Presenter (MVP) foi escolhida por ser ideal para aplicações com uma interface de usuário interativa e de fluxo simples, como sistemas de agendamento e gestão
+
+---
+
 ## Escopo
 
 O sistema do **Deia Ateliê** tem como objetivo resolver os principais problemas enfrentados por clientes e pela administração do ateliê, trazendo mais organização, praticidade e agilidade no atendimento.
@@ -77,5 +98,24 @@ O sistema do **Deia Ateliê** tem como objetivo resolver os principais problemas
 
 - O sistema precisa se conectar ao WhatsApp para permitir que os cliente agendem serviços e interajam com o bot automaticamente.
 - O sistema deve enviar confirmações de agendamento via WhatsApp.
+
+  ---
+
+## Como a arquitetura MVP atende os Requisitos Funcionais:
+
+- Permite que Views (interfaces) sejam facilmente alteradas ou adaptadas sem afetar a lógica de negócio.
+- O Presenter gerencia toda a lógica de fluxo: cadastro, agendamento, geração de relatórios, controle de agenda, envio de notificações etc.
+- O Model lida com o acesso e manipulação de dados (usuários, serviços, horários), garantindo a integridade dos dados mesmo com múltiplas ações simultâneas.
+
+  ---
+
+## Como ela atende os Requisitos Não Funcionais:
+
+- Desempenho: separação clara de responsabilidades evita sobrecarga na interface e torna o carregamento mais rápido.
+- Segurança: lógica de segurança fica centralizada no Presenter e Model, tornando a proteção de dados mais confiável.
+- Usabilidade: a View pode ser otimizada para diferentes dispositivos sem interferir no restante do sistema.
+- Escalabilidade e integração com APIs (WhatsApp): facilitada por módulos independentes, podendo conectar o Presenter a serviços externos.
+
+---
 
 **Trello:** https://trello.com/b/Ht7yfPSk/pac-v-vi
