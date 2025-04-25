@@ -118,4 +118,4 @@ O sistema do **Deia Ateliê** tem como objetivo resolver os principais problemas
 
 ---
 
-**Trello:** https://trello.com/b/Ht7yfPSk/pac-v-vi
+**Trello:** https://trello.com/b/tXkeg8i1/pac-v-vi
